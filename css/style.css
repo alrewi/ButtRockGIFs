@@ -1,0 +1,45 @@
+body {
+    font-family: 'Permanent Marker', cursive;
+    background-image: url("COLOURlovers.com-the_spotted_leopard.png");
+    background-size: cover;
+}
+header {
+    background-image: url("COLOURlovers.com-Black_Glittery.png");
+    padding: 20px;
+}
+h1 {
+    font-size: 45px;
+    color: #fc05ef;
+}
+h3, .rating {
+    font-size: 30px;
+    color: #fc05ef;
+
+}
+#add-form {
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#add-field {
+    color: white;
+}
+#title {
+    font-family: 'Nosifer', cursive;
+    font-size: 60px;
+}
+#band-input {
+    margin-bottom: 10px;
+}
+#gif-display {
+    padding-left: 30px;
+    width: 100%;
+}
+.btn-grp {
+    margin: 10px -30px 30px 30px;
+}
+.gif {
+    float:left;
+    margin: 5px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Butt Rock GIFs</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nosifer|Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>I know it's only <span id="title">rock 'n' roll</span> but I like it!
+        </h1>
+        <h3>Use the buttons to generate some smokin' hot gifs.
+            <br>Add your own, if you're feelin' wild.
+        </h3>
+    </header>
+   
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 btn-grp"></div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <form id="add-form">
+                <label id="add-field" for="band-input">Who'd we forget?</label>
+                <br>
+                <input type="text" id="band-input">
+                <br>
+                <input id="add-band" type="submit" value="Add a new rocker!">
+            </form>
+        </div>
+    </div>
+
+    <div class="row" id="gif-display"></div>
+
+    <script src="javascript/generator.js"></script>
+
+</body>
+</html>
