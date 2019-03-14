@@ -85,8 +85,9 @@ $(document).on("click", ".rockButton", function () {
 //If a user clicks a gif, it should start playing
 //If it's clicked a second time, it should stop.
 $("#gif-display").on("click", ".gif", function () {
-    console.log("am i running")
+
     var state = $(this).attr("data-state");
+    
     if (state === "still") {
         var animate = $(this).attr("data-animate");
         $(this).attr("src", animate).attr("data-state", "animate");
