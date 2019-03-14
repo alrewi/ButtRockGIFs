@@ -38,11 +38,6 @@ $("#add-band").on("click", function (event) {
     makeButtons();
 });
 
-$(document).on("click", ".rockButton", function () {
-    var band = $(this).attr("data-name");
-    displayGifs(band);
-});
-
 //Each time a button is clicked, an ajax request must be sent to the giphy api to retrieve the gifs
 //and the gifs must be displayed in the gif-display
 function displayGifs(band) {
@@ -78,19 +73,26 @@ function displayGifs(band) {
             $("#gif-display").prepend(gifDiv);
         }
     })
-}
+};
+
+
+
+$(document).on("click", ".rockButton", function () {
+    var band = $(this).attr("data-name");
+    displayGifs(band);
+});
 
 //If a user clicks a gif, it should start playing
 //If it's clicked a second time, it should stop.
-$(".gif").on("click", function () {
-
+$("#gif-display").on("click", ".gif", function () {
+    console.log("am i running")
     var state = $(this).attr("data-state");
     if (state === "still") {
-        $(this).attr("src", $(this).attr("data-animate"));
-        $(this).attr("data-state", "animate");
-    } else {
-        $(this).attr("src", $(this).attr("data-still"));
-        $(this).attr("data-state", "still");
+        var animate = $(this).attr("data-animate");
+        $(this).attr("src", animate).attr("data-state", "animate");
+    } else if (state === "animate") {
+        var still = $(this).attr("data-still");
+        $(this).attr("src", still).attr("data-state", "still");
     }
 });
 
